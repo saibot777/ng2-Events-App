@@ -280,7 +280,7 @@ export class EventsListComponent {
       id: 5,
       name: 'ng-vegas',
       date: '2/10/2037',
-      time: '9:00 am',
+      time: '8:00 am',
       price: 400.00,
       imageUrl: '/app/assets/images/ng-vegas.png',
       location: {
