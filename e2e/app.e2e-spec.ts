@@ -1,10 +1,10 @@
-import { EventsAppPage } from './app.po';
+import { EditorPage } from './app.po';
 
-describe('events-app App', function() {
-  let page: EventsAppPage;
+describe('editor App', () => {
+  let page: EditorPage;
 
   beforeEach(() => {
-    page = new EventsAppPage();
+    page = new EditorPage();
   });
 
   it('should display message saying app works', () => {

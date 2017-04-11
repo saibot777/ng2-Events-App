@@ -1,6 +1,6 @@
 import { browser, element, by } from 'protractor';
 
-export class EventsAppPage {
+export class EditorPage {
   navigateTo() {
     return browser.get('/');
   }
