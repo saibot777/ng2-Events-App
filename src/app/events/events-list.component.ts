@@ -1,6 +1,5 @@
 import {Component, OnInit} from '@angular/core';
 import {EventService} from "./shared/event.service";
-declare var toastr: any;
 
 @Component({
   selector: 'events-list',
@@ -15,7 +14,4 @@ export class EventsListComponent implements OnInit{
     this.events = this.eventService.getEvents();
   }
 
-  handleThumbnailClick(eventName) {
-    toastr.success(eventName)
-  }
 }

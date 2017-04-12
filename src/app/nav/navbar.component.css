@@ -5,5 +5,6 @@ ul li a, .navbar-brand {
 ul li a:hover, .navbar-brand:hover {
   color: #aaaaaa;
 }
+li > a.active {color: #f97924 !important;}
 
 
