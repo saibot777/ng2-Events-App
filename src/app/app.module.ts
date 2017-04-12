@@ -4,17 +4,19 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import {RouterModule} from "@angular/router";
 
+import {
+  EventsListComponent,
+  EventThumbnailComponent,
+  EventService,
+  EventDetailsComponent,
+  CreateEventComponent,
+  EventRouteActivator,
+  EventListResolver
+} from './events/index'
 import { AppComponent } from './app.component';
-import { EventsListComponent } from './events/events-list.component';
-import { EventThumbnailComponent } from './events/event-thumbnail.component';
 import { NavbarComponent } from './nav/navbar.component';
-import {EventService} from "./events/shared/event.service";
-import { EventDetailsComponent } from './events/event-details/event-details.component';
 import {appRoutes} from "./routes";
-import { CreateEventComponent } from './events/create-event.component';
 import {Error404Component} from "./errors/404.component";
-import {EventRouteActivator} from "./events/event-details/event-router-activator.service";
-import {EventListResolver} from "./events/events-list-resolver.service";
 
 
 @NgModule({
