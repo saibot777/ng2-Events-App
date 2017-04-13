@@ -13,15 +13,15 @@ import {LoginComponent} from "./login.component";
 
 
 @NgModule({
-  declarations: [
-    ProfileComponent,
-    LoginComponent
-  ],
   imports: [
     CommonModule,
     FormsModule,
     HttpModule,
     RouterModule.forChild(userRoutes)
+  ],
+  declarations: [
+    ProfileComponent,
+    LoginComponent
   ],
   providers: []
 })
