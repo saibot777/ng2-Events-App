@@ -18,6 +18,7 @@ import { NavbarComponent } from './nav/navbar.component';
 import {appRoutes} from "./routes";
 import {Error404Component} from "./errors/404.component";
 import {AuthService} from "./user/auth.service";
+import { CreateSessionComponent } from './events/event-details/create-session.component';
 
 
 @NgModule({
@@ -28,7 +29,8 @@ import {AuthService} from "./user/auth.service";
     NavbarComponent,
     EventDetailsComponent,
     CreateEventComponent,
-    Error404Component
+    Error404Component,
+    CreateSessionComponent
   ],
   imports: [
     BrowserModule,
