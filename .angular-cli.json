@@ -19,9 +19,11 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
       "styles": [
+        "toastr.scss",
         "styles.scss"
       ],
       "scripts": [
+        "toastr.min.js"
       ],
       "environmentSource": "environments/environment.ts",
       "environments": {

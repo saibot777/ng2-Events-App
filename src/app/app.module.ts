@@ -4,6 +4,8 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import {RouterModule} from "@angular/router";
 
+declare let toastr : Toastr;
+
 import {
   EventsListComponent,
   EventThumbnailComponent,
@@ -22,8 +24,7 @@ import {AuthService} from "./user/auth.service";
 import { CreateSessionComponent } from './events/event-details/create-session.component';
 import { SessionListComponent } from './events/event-details/session-list.component';
 import {CollapsibleWellComponent} from "./common/collapsible-well.component";
-import {ToastrService} from "./common/toastr.service";
-
+import {TOASTR_TOKEN, Toastr} from "./common/toastr.service";
 
 @NgModule({
   declarations: [
@@ -48,7 +49,10 @@ import {ToastrService} from "./common/toastr.service";
   ],
   providers: [
     EventService,
-    ToastrService,
+    {
+      provide: TOASTR_TOKEN,
+      useValue: toastr
+    },
     EventRouteActivator,
     EventListResolver,
     AuthService,
