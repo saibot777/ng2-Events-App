@@ -22,6 +22,7 @@ import {AuthService} from "./user/auth.service";
 import { CreateSessionComponent } from './events/event-details/create-session.component';
 import { SessionListComponent } from './events/event-details/session-list.component';
 import {CollapsibleWellComponent} from "./common/collapsible-well.component";
+import {ToastrService} from "./common/toastr.service";
 
 
 @NgModule({
@@ -47,6 +48,7 @@ import {CollapsibleWellComponent} from "./common/collapsible-well.component";
   ],
   providers: [
     EventService,
+    ToastrService,
     EventRouteActivator,
     EventListResolver,
     AuthService,
