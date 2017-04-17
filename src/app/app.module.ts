@@ -29,6 +29,7 @@ import {TOASTR_TOKEN, Toastr} from "./common/toastr.service";
 import {JQ_TOKEN} from "./common/jQuery.service";
 import {SimpleModalComponent} from "./common/simpleModal.component";
 import {ModalTriggerDirective} from "./common/modalTrigger.directive";
+import {UpvoteComponent} from "./events/event-details/upvote.component";
 
 @NgModule({
   declarations: [
@@ -44,6 +45,7 @@ import {ModalTriggerDirective} from "./common/modalTrigger.directive";
     CollapsibleWellComponent,
     DurationPipe,
     SimpleModalComponent,
+    UpvoteComponent,
     ModalTriggerDirective
   ],
   imports: [
