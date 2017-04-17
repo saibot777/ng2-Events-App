@@ -14,3 +14,15 @@ a {
 a:hover {
   color: orangered;
 }
+
+button.btn-default {
+  background-color: #485563;
+  color: #fff !important;
+}
+button.btn-default:hover {
+  background-color: #35373a;
+}
+button.btn-default.active {
+  background-color: #35373a;
+  outline-color: orangered;
+}
