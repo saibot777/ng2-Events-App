@@ -5,6 +5,7 @@ import { HttpModule } from '@angular/http';
 import {RouterModule} from "@angular/router";
 
 declare let toastr : Toastr;
+declare let jQuery : Object;
 
 import {
   EventsListComponent,
@@ -25,6 +26,8 @@ import { CreateSessionComponent } from './events/event-details/create-session.co
 import { SessionListComponent } from './events/event-details/session-list.component';
 import {CollapsibleWellComponent} from "./common/collapsible-well.component";
 import {TOASTR_TOKEN, Toastr} from "./common/toastr.service";
+import {JQ_TOKEN} from "./common/jQuery.service";
+import {SimpleModalComponent} from "./common/simpleModal.component";
 
 @NgModule({
   declarations: [
@@ -38,7 +41,8 @@ import {TOASTR_TOKEN, Toastr} from "./common/toastr.service";
     CreateSessionComponent,
     SessionListComponent,
     CollapsibleWellComponent,
-    DurationPipe
+    DurationPipe,
+    SimpleModalComponent
   ],
   imports: [
     BrowserModule,
@@ -52,6 +56,10 @@ import {TOASTR_TOKEN, Toastr} from "./common/toastr.service";
     {
       provide: TOASTR_TOKEN,
       useValue: toastr
+    },
+    {
+      provide: JQ_TOKEN,
+      useValue: jQuery
     },
     EventRouteActivator,
     EventListResolver,
