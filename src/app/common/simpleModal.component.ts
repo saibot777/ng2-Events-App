@@ -12,7 +12,7 @@ import {Component, Input} from "@angular/core";
         <div class="modal-content">
           <div class="modal-header">
             <button type="button" data-dismiss="modal" class="close">
-              <span>&times</span>
+              <span>&times;</span>
             </button>
             <h4 class="modal-title">{{title}}</h4>
           </div>
