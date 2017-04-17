@@ -30,6 +30,7 @@ import {JQ_TOKEN} from "./common/jQuery.service";
 import {SimpleModalComponent} from "./common/simpleModal.component";
 import {ModalTriggerDirective} from "./common/modalTrigger.directive";
 import {UpvoteComponent} from "./events/event-details/upvote.component";
+import {VoterService} from "./events/event-details/voter.service";
 
 @NgModule({
   declarations: [
@@ -68,6 +69,7 @@ import {UpvoteComponent} from "./events/event-details/upvote.component";
     EventRouteActivator,
     EventListResolver,
     AuthService,
+    VoterService,
     {
       provide: 'canDeactivateCreateEvent',
       useValue: checkDirtyState
