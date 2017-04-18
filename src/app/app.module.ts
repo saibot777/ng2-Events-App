@@ -4,7 +4,6 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import {RouterModule} from "@angular/router";
 
-declare let toastr : Toastr;
 declare let jQuery : Object;
 
 import {
@@ -25,7 +24,6 @@ import {AuthService} from "./user/auth.service";
 import { CreateSessionComponent } from './events/event-details/create-session.component';
 import { SessionListComponent } from './events/event-details/session-list.component';
 import {CollapsibleWellComponent} from "./common/collapsible-well.component";
-import {TOASTR_TOKEN, Toastr} from "./common/toastr.service";
 import {JQ_TOKEN} from "./common/jQuery.service";
 import {SimpleModalComponent} from "./common/simpleModal.component";
 import {ModalTriggerDirective} from "./common/modalTrigger.directive";
@@ -58,10 +56,6 @@ import {VoterService} from "./events/event-details/voter.service";
   ],
   providers: [
     EventService,
-    {
-      provide: TOASTR_TOKEN,
-      useValue: toastr
-    },
     {
       provide: JQ_TOKEN,
       useValue: jQuery
