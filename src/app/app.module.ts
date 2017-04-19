@@ -29,6 +29,7 @@ import {SimpleModalComponent} from "./common/simpleModal.component";
 import {ModalTriggerDirective} from "./common/modalTrigger.directive";
 import {UpvoteComponent} from "./events/event-details/upvote.component";
 import {VoterService} from "./events/event-details/voter.service";
+import {LocationValidator} from "./events/location-validator.directive";
 
 @NgModule({
   declarations: [
@@ -45,7 +46,8 @@ import {VoterService} from "./events/event-details/voter.service";
     DurationPipe,
     SimpleModalComponent,
     UpvoteComponent,
-    ModalTriggerDirective
+    ModalTriggerDirective,
+    LocationValidator
   ],
   imports: [
     BrowserModule,
